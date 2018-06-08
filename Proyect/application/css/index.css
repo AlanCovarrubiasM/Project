@@ -1,0 +1,379 @@
+/*-------------------------------------------------------------------header--------------------------------------------------------------*/
+  /*---------------------------------logo------------------------------*/
+
+header .logo{
+	position: relative;
+	width: 100px;
+	height: inherit;
+	float: left;
+	}
+	
+header .logo img{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+
+	/*--------------------------------Menu-----------------------------*/
+header{
+	width: 100%;
+	height: 60px;
+	background-color:#555;
+	position: fixed;
+	z-index: 1;
+	top: 0px;
+}
+
+header nav{
+	float: right;
+	top: 0px;
+	position: relative;
+}
+
+header nav ul{
+	list-style: none;
+}
+
+header nav ul li{
+	float: left;
+}
+
+header nav ul li a{
+	display: block;
+	padding: 18px;
+	text-decoration:none !important; 
+	color: #FFF !important;
+}
+
+header span{
+	float: left;
+	list-style: none;
+}
+
+header nav ul li a:hover{
+	background-color: #000;
+}
+/*------------------------------Menu-Celular----------------------------*/
+@media(max-width: 900px){
+	
+	header nav{
+		position: fixed;
+		right: -100%;
+		height: 100%;
+		width: 40%;
+		background-color: #555;
+		top: 60px;
+		z-index: 1;
+	}
+	
+	header nav ul li{
+		float: none;
+	}
+	
+
+	/*---------------------Menu-celular-logo----------------------------*/
+	header .logo{
+		position: relative;
+		width: 100px;
+		height: inherit;
+	}
+	
+	header .logo img{
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%,-50%);
+	}
+	/*-----------------------Menu-celular-icon---------------------------*/
+	/*
+		li = icon
+		a = icon-line
+	*/
+	header .icon{
+		position: fixed;
+		right: 0;
+		height: 60px;
+		width: 100px;
+		background-color: #555;
+		top: 0px;
+		z-index: 1
+	}
+	header .icon .icon-line{
+		position: relative;
+		list-style: none;
+		height: 7px;
+		width: 50px;
+		background-color: white;
+		margin: 7px;
+		left: 20%;
+	}
+}
+@media(max-width:700px ){
+	.middle {
+		  flex-direction: column;
+		  width: 100% !important;
+
+	}
+	#login{
+		order: 2;
+		padding: 0px !important;
+		border: none !important;
+	}
+	div.main{
+		margin-top: 60px;
+	}
+
+/*-------------------------------------------------------------------body--------------------------------------------------------------*/
+
+/*------------------------------------information--------------------------*/
+
+#box-information{
+	position: relative;
+	margin:20px;
+	width: auto;
+	border-style: solid;
+	border-color: black;
+	border-radius: 10px;
+
+}
+
+.information-all{
+	padding: 15px;
+	border-style: solid;
+	border-color: black; 
+	margin: 15px;
+	border-radius: 10px;
+}
+
+.title-center{
+	text-align: center;
+	font-size: 20px;
+}
+
+/*------------------------------------login--------------------------*/
+
+.box-login{
+	position: relative;
+	margin:20px;
+	width: auto;
+	border-style: solid;
+	border-color: black;
+	border-radius: 10px;
+}
+
+.form-login{
+	padding: 10px;
+	margin: 10px;
+	text-align: center;
+	width: auto;
+	border-style: solid;
+	border-color: black;
+	border-radius: 10px;
+
+
+}
+
+input[tipo="input"]{
+	margin: 5px;
+	width: auto;
+	font-size: small !important;
+	text-align: center;
+}
+/*-----------icons-login-------------*/
+	
+}
+.icons-positions{
+	position: relative;
+	right: -30px;
+	top: 3px;
+}
+
+
+/*---------------------------------icons-login-----------------------------------------------------*/
+
+div.main{
+    background: #0264d6; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #0264d6 1%, #1c2b5a 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(1%,#0264d6), color-stop(100%,#1c2b5a)); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  #0264d6 1%,#1c2b5a 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  #0264d6 1%,#1c2b5a 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  #0264d6 1%,#1c2b5a 100%); /* IE10+ */
+background: radial-gradient(ellipse at center,  #0264d6 1%,#1c2b5a 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0264d6', endColorstr='#1c2b5a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+height:calc(100vh);
+width:100%;
+}
+
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+/* ---------- GENERAL ---------- */
+
+* {
+  box-sizing: border-box;
+    margin:0px auto;
+
+  &:before,
+  &:after {
+    box-sizing: border-box;
+  }
+
+}
+
+body {
+   
+    /*! color: #606468; */
+  /*! font: 87.5%/1.5em 'Open Sans', sans-serif; */
+  margin: 0;
+}
+
+a {
+	color: #eee;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+input {
+	border: none;
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.5em;
+	padding: 0;
+	-webkit-appearance: none;
+}
+
+p {
+	line-height: 1.5em;
+}
+
+.clearfix {
+  *zoom: 1;
+
+  &:before,
+  &:after {
+    content: ' ';
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+
+}
+
+.container {
+  /*! left: 50%; */
+  /*! position: relative; */
+  /*! top: 50%; */
+  /*! transform: translate(-50%, -50%); */
+  height: 100%;
+}
+
+/* ---------- Estilos tabla ---------- */
+.tabla-style{
+	width: 80% !important;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.tabla-style tbody{ 
+	background-color: #fff;
+}
+/* ---------- LOGIN ---------- */
+
+#login form{
+	width: 250px;
+}
+#login, .logo{
+    /*! display:inline-block; */
+    /*! width:40%; */
+}
+#login{
+border-right:1px solid #fff;
+  padding: 0px 22px;
+}
+.logo{
+color:#fff;
+font-size:50px;
+  line-height: 125px;
+}
+.logo1{
+	color: #FFF;
+  line-height: 125px;
+}
+.logo1 h3{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size:80px;
+	
+}
+#login form span.fa {
+	background-color: #fff;
+	border-radius: 3px 0px 0px 3px;
+	color: #000;
+	display: block;
+	float: left;
+	height: 50px;
+    font-size:24px;
+	line-height: 50px;
+	text-align: center;
+	width: 50px;
+}
+
+#login form input {
+	height: 50px;
+}
+
+#login form input[type="text"], input[type="password"], input[type="email"] {
+	background-color: #fff;
+	border-radius: 0px 3px 3px 0px;
+	color: #000;
+	margin-bottom: 1em;
+	padding: 0 16px;
+	width: 200px;
+}
+
+#login form input[type="submit"] {
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  background-color: #000000;
+  color: #eee;
+  font-weight: bold;
+  /* margin-bottom: 2em; */
+  text-transform: uppercase;
+  padding: 5px 10px;
+  height: 30px;
+}
+
+#login form input[type="submit"]:hover {
+	background-color: #d44179;
+}
+
+#login > p {
+	text-align: center;
+}
+
+#login > p span {
+	padding-left: 5px;
+}
+.middle {
+  display: flex;
+  width: 600px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+
+.bajar-main{
+	margin-top: 60px;
+}
+/* -------------------------------------- LOGIN ------------------------------------ */
